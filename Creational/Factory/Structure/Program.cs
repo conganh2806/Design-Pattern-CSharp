@@ -16,17 +16,11 @@ class Program
         }
     }
 
-    abstract class Product
-    {
-    }
+    abstract class Product { }
 
-    class ConcreteProductA : Product
-    {
-    }
+    class ConcreteProductA : Product { }
 
-    class ConcreteProductB : Product
-    {
-    }
+    class ConcreteProductB : Product { }
 
     abstract class Creator
     {
@@ -41,7 +35,7 @@ class Program
             return new ConcreteProductA();
         }
     }
-    
+
     class ConcreteCreatorB : Creator
     {
         public override Product CreateProduct()
